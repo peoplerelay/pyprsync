@@ -1,16 +1,16 @@
-#pyprsync.py#
+# pyprsync.py
 *PeopleRelay external synchronizer*
 ***
-##Description##
+## Description
 **pyprsync.py** is service for [systemd](https://freedesktop.org/wiki/Software/systemd/) (Linux) that calls synchronization procedure from PeopleRelay database. There is not build-in scheduler in [Firebird 2.5](https://www.firebirdsql.org/en/firebird-2-5-8/), therefore external tool is required for timed synchronizations. **pyprsync.py** is made for robustness and simplicity. Run-time errors are suppressed in hope that system will recover.
 
 
-##Prerequisites
+## Prerequisites
 * Python 3
 * [FDB](https://www.firebirdsql.org/en/devel-python-driver/) Python library
 
 
-##Installation and Configuration##
+## Installation and Configuration
 Depending on operating system, [Firebird](https://www.firebirdsql.org/en/firebird-2-5-8/) and PeopleRelay setup, it can be required to edit script and configurations files. In typical case it should be enough to perform next steps:
 
 * change connection parameters and synchronization interval in ***pyprsync.config***
@@ -20,5 +20,5 @@ Depending on operating system, [Firebird](https://www.firebirdsql.org/en/firebir
 * enable ***pyprsync*** systemd service
 
 
-##License##
+## License
 Apache License 2.0
